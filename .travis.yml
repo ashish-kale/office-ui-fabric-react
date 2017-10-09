@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '7'
   script:
-  - npm run _rushBuildToFabric
+  - npm run fastbuild
 before_deploy:
   - cd packages && cd office-ui-fabric-react
 deploy:
