@@ -1,10 +1,9 @@
 language: node_js
 node_js:
   - '7'
-script:
-  - npm run buildfast
 before_deploy:
-  "git push origin master:refs/heads/master" && cd packages && cd office-ui-fabric-react
+  "git push origin master:refs/heads/master" \
+  cd packages && cd office-ui-fabric-react
 deploy:
   provider: azure_web_apps
   skip_cleanup: true
