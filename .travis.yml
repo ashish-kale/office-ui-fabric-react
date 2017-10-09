@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - '7'
   script:
-  - npm run buildfast
+  - npm run _rushBuildToFabric
 before_deploy:
-  - cd packages && cd office-ui-fabric-react
+  cd packages && cd office-ui-fabric-react
 deploy:
   provider: azure_web_apps
   skip_cleanup: true
